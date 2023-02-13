@@ -22,6 +22,7 @@ body{
     justify-content: center;
     background-color: var(--background-color);
     position: relative;
+    font-size: 15px;
 
 }
 
@@ -29,13 +30,14 @@ article{
     border-radius: 22px;
     background-color: var(--container-color);
     margin:1.5rem;
+    box-shadow: 0 15px 29px hsla(218, 44%, 22%, 0.1);
 }
 
 .article-container{
     display: flex;
     flex-direction: column;
-    width: 330px;
-    margin: 1rem;
+    width: min(288px, 80vw);
+    margin: 1rem; 
 }
 
 img{
@@ -43,12 +45,13 @@ img{
 }
 
 .text{
-    margin: 2rem 1rem;
+    margin: 1.5rem 1rem;
 }
 
 h1, p{
     text-align: center;
     font-family: var(--text-font);
+    
 }
 
 h1{
@@ -57,7 +60,7 @@ h1{
 }
 
 p{
-    margin-top: 1rem;
+    margin-top: 1em;
     color:var(--text-color);
     font-weight: var(--text-normal);
 }
@@ -74,9 +77,3 @@ footer{
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
 }
-
-@media only screen and (max-width: 600px) {
-    .article-container {
-      width: min(330px, 80vw);
-    }
-  }
